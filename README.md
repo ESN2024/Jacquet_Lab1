@@ -10,7 +10,9 @@ Nous allons ainsi voir chaque étape de la réalisation de ce projet, les diffic
 Nous allons dans un premier construire une représentation du système finale avant de passer à l'étape de la réalisation.
 
 ### Schéma bloc fonctionnel
+
 <img width="750" alt="image" src="https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/e43b916c-166f-418b-aadc-7f19f364fbc9">
+
 Ce schéma présente l'architecture finale de notre système, la liaison entre notre pc et le système cible, ici la DE10 lite, via un câble USB Blaster. Ici nous visualisons uniquement les périphériques décris dans nos objectifs, évidemment la clock n'apparaît pas, ainsi que le signal de reset présent sur un second bouton poussoire.
 L'architecture comporte ainsi différents modules important : 
 1. RAM : La mémoire avec une capacité de 40 Mo, amplement suffisant pour cette implémentation.
@@ -20,9 +22,13 @@ L'architecture comporte ainsi différents modules important :
 ### Création du système
 Après avoir crée sous Quartus 18.1 notre projet nous allons pouvoir avec l'outil Platform Designer crée notre système en déclarant l'ensemble des modules nécessaires ainsi que leurs configurations respectives.
 <img width="352" alt="image" src="https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/68c118c0-71ff-4f41-a909-7796294b890b">
+
 <img width="356" alt="image" src="https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/27643f2e-2be2-4f49-aa25-0eee4cf3a65c">
+
 Il faudra relier minutieusement ces différents modules pour les interconnecter de façon intelligente, en veillant à bien renseigner les interuptions de nos deux modules PIO_1 et PIO_2, le nombre de bit alloué ainsi que la direction, c'est à dire si les périphériques seront des sorties ou des entrées.
+
 <img width="260" alt="image" src="https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/132083b4-fa53-48ba-b258-22f681b6a225">
+
 Lorsque ces étapes ont été réalisé et que Platform Designer ne renvois aucune erreur nous pouvons généré le VHDL correspondant à ce système en l'exportant.
 
 
