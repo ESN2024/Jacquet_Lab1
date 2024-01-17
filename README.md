@@ -96,7 +96,7 @@ Ce Makefile nous permettra de compiler notre code C ainsi que l'intégralité de
 que nous allons déployer le programme, et à l'aide de Nios2-terminale.exe suivre les retours renvoyé par nos alt_printf sur notre terminale.
 
 Voici la démonstration finale de notre programme en vidéo : 
-https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/ef314df1-0a86-4096-9aff-18ab99b545d9
+[https://github.com/ESN2024/Jacquet_Lab1/assets/127327962/ef314df1-0a86-4096-9aff-18ab99b545d9](https://github.com/ESN2024/Jacquet_Lab1/blob/main/IMG_3171.MOV)
 
 ## Conclusion
 
